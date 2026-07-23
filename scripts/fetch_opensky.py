@@ -76,7 +76,14 @@ def get_states(token: str, bbox: dict = DEFAULT_BBOX) -> pd.DataFrame:
 
     data = response.json()
     states = data.get("states") or []
-    df = pd.DataFrame(states, columns=STATE_VECTOR_COLUMNS)
+
+    if states:
+        n_cols = len(states[0])
+        columns = STATE_VECTOR_COLUMNS[:n_cols]
+    else:
+        columns = STATE_VECTOR_COLUMNS
+
+    df = pd.DataFrame(states, columns=columns)
     df["query_time"] = data.get("time")
     return df
 
