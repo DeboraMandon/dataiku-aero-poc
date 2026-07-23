@@ -1,0 +1,13 @@
+# secrets
+.env
+credentials.json
+*credentials*.json
+
+# données téléchargées / générées localement
+_airports_raw.csv
+positions_avions.csv
+
+# python
+__pycache__/
+*.pyc
+.venv/
