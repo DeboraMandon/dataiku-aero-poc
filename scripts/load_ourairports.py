@@ -76,7 +76,9 @@ def main() -> None:
         print(f"Filtré sur iso_country={country_filter} : {before} -> {len(df)} lignes")
 
     engine = create_engine(conn_string)
-    df.to_sql("aeroports", engine, if_exists="replace", index=False)
+    with engine.begin() as conn:
+        conn.exec_driver_sql("TRUNCATE TABLE aeroports")
+    df.to_sql("aeroports", engine, if_exists="append", index=False)
     print(f"{len(df)} lignes chargées dans la table `aeroports` sur Neon.")
 
 
