@@ -1,7 +1,8 @@
 {
   "type": "step_based",
   "name": "refresh_quotidien",
-  "active": true,
+  "active": false,
+  "runAsUser": "debora.mandon@gmail.com",
   "checklists": {
     "checklists": []
   },
@@ -28,7 +29,7 @@
         "minute": 0,
         "hour": 15,
         "timezone": "SERVER",
-        "lastUpdate": 1784886350965
+        "lastUpdate": 1784903349711
       }
     }
   ],
