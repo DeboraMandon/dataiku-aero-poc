@@ -2,13 +2,6 @@
   "type": "step_based",
   "name": "refresh_quotidien",
   "active": false,
-  "creationTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "debora.mandon@gmail.com"
-    },
-    "lastModifiedOn": 1784885948192
-  },
   "checklists": {
     "checklists": []
   },
@@ -18,7 +11,27 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [],
+  "triggers": [
+    {
+      "id": "S33fBFXN",
+      "type": "temporal",
+      "name": "Temporel                                                                                                                                                                                                               ",
+      "delay": 5,
+      "active": true,
+      "params": {
+        "repeatFrequency": 1,
+        "frequency": "Daily",
+        "startingFrom": "2026-07-24",
+        "daysOfWeek": [
+          "Friday"
+        ],
+        "minute": 0,
+        "hour": 15,
+        "timezone": "SERVER",
+        "lastUpdate": 1784886137728
+      }
+    }
+  ],
   "reporters": [],
   "params": {
     "steps": []
