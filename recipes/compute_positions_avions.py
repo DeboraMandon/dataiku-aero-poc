@@ -1,4 +1,24 @@
+import dataiku
+import pandas as pd
+import requests
 import time
+
+client = dataiku.api_client()
+project = client.get_default_project()
+variables = project.get_variables()
+api_key = variables["local"]["aviationstack_api_key"]
+
+# Datasets déclarés en entrée du recipe
+df_suivis = dataiku.Dataset("aeroports_suivis").get_dataframe()
+df_aeroports = dataiku.Dataset("aeroports").get_dataframe()
+
+# Jointure pour récupérer le code IATA correspondant à chaque code ICAO suivi
+df_join = df_suivis.merge(
+    df_aeroports[["icao_code", "iata_code"]],
+    left_on="code_icao",
+    right_on="icao_code",
+    how="left",
+)
 
 BASE_URL = "https://api.aviationstack.com/v1/flights"
 all_flights = []
