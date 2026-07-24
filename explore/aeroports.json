@@ -159,7 +159,10 @@
           "columnType": "ALPHANUM",
           "currentMode": "ALPHANUM",
           "sort": "count",
-          "selectedValues": {}
+          "selectedValues": {
+            "LFBD": true,
+            "LFPG": true
+          }
         },
         "alphanumFilter": {
           "type": "alphanum",
@@ -176,8 +179,8 @@
           "params": {
             "type": "Text",
             "ok": true,
-            "nok": true,
-            "empty": true
+            "nok": false,
+            "empty": false
           }
         }
       }
