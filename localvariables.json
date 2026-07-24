@@ -1,4 +1,5 @@
 {
        "opensky_client_id": "deboramandon-api-client",
-       "opensky_client_secret": "9TCkNdYrUECNiuxE0cCxyaPSPyJvGRwD"
+       "opensky_client_secret": "9TCkNdYrUECNiuxE0cCxyaPSPyJvGRwD",
+       "aviationstack_api_key": "ef2184f72a7d4934dc7b26e794ac698b"
    }
