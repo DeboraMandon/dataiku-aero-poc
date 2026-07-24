@@ -1,7 +1,7 @@
 {
   "type": "step_based",
   "name": "refresh_quotidien",
-  "active": false,
+  "active": true,
   "checklists": {
     "checklists": []
   },
@@ -28,7 +28,7 @@
         "minute": 0,
         "hour": 15,
         "timezone": "SERVER",
-        "lastUpdate": 1784886175304
+        "lastUpdate": 1784886235342
       }
     }
   ],
