@@ -9,8 +9,8 @@
             "box": {
               "top": 0,
               "left": 0,
-              "width": 12,
-              "height": 12
+              "width": 15,
+              "height": 13
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
@@ -54,9 +54,9 @@
             "tileType": "INSIGHT",
             "box": {
               "top": 0,
-              "left": 12,
-              "width": 12,
-              "height": 12
+              "left": 15,
+              "width": 15,
+              "height": 13
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
