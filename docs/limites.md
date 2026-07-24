@@ -25,3 +25,12 @@
 - **Git natif Dataiku → GitHub** : le push ne contient que les métadonnées du
   projet (structure du flow, recipes, réglages), pas les données physiques. Le
   repo GitHub ne remplace donc pas une sauvegarde des données elles-mêmes.
+- **OpenSky abandonné** : OpenSky bloque explicitement le trafic AWS et les
+  autres hyperscalers dans sa politique anti-abus officielle. Dataiku Cloud
+  tournant sur AWS, tous les appels timeout depuis les pods d'exécution.
+  Remplacé par Aviationstack (statuts de vol par aéroport suivi, plutôt que
+  positions ADS-B en direct).
+- **Quota Aviationstack, plan gratuit** : entre 100 et 500 requêtes/mois selon
+  la source consultée — vérifier le chiffre exact sur le dashboard du compte.
+  4 aéroports suivis = 4 requêtes par run, donc pas de scenario automatique
+  fréquent possible sans dépasser le quota rapidement.
