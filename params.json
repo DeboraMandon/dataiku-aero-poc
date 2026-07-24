@@ -181,6 +181,8 @@
   },
   "name": "Observatoire trafic aerien",
   "projectStatus": "Sandbox",
+  "imgPattern": 1,
+  "showInitials": false,
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -260,22 +262,15 @@
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "Set a project image (click on the color next to the project title)",
             "createdOn": 1784819069452,
             "createdBy": "debora.mandon@gmail.com",
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "Import your [first dataset](projects/OBSERVATOIRE_TRAFIC_AERIEN/datasets/new/)",
-            "createdOn": 1784819069452,
-            "createdBy": "debora.mandon@gmail.com",
-            "stateChangedOn": 0
-          },
-          {
-            "done": false,
-            "text": "Organize your work by replacing this with a real todo",
             "createdOn": 1784819069452,
             "createdBy": "debora.mandon@gmail.com",
             "stateChangedOn": 0
